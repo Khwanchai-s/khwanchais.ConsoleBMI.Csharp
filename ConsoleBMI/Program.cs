@@ -43,8 +43,7 @@ namespace ConsoleBMI
 
         static void headProgram(string programmerName)
         {
-            Console.WriteLine("update 15/11/2024");
-            Console.WriteLine("update 15/11/2024 update2");
+            Console.WriteLine("Update from Web Github");
             Console.WriteLine("Body mass index (BMI)");
             line("*", 40);
 
