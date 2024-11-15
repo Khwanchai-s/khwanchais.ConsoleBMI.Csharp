@@ -11,7 +11,7 @@ namespace ConsoleBMI
             {
                 Console.Clear();
 
-                headProgram("Khwanchai Suksaen");           //เรียกใช้จากฟังก์ชันที่เขียนไว้
+                headProgram("Khwanchai Suksaen");           
 
                 //input รับข้อมูล น้ำหนักและส่วนสูง
                 double weight = 0.0;
@@ -23,7 +23,7 @@ namespace ConsoleBMI
                 line("#", 40);
                 //process ประมวลผล
 
-                bmi(weight, height);     //เรียกใช้การประมวลผลจาก bmi()
+                bmi(weight, height);     
 
                 line("%", 40);
                 Console.WriteLine();
@@ -86,7 +86,7 @@ namespace ConsoleBMI
                 result = "obesity";
             }
             Console.WriteLine("Your Body mass index (BMI) is " + bmi.ToString("0.00"));
-            Console.WriteLine("From your body mass index, you are " + result);
+            WriteLineColor("From your body mass index, you are" + result, ConsoleColor.Green, ConsoleColor.Gray);
         }
     }
 }
