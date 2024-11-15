@@ -44,6 +44,7 @@ namespace ConsoleBMI
         static void headProgram(string programmerName)
         {
             Console.WriteLine("Update from Web Github");
+            //ทดสอบ Github 
             Console.WriteLine("Body mass index (BMI)");
             line("*", 40);
 
