@@ -17,9 +17,17 @@ namespace ConsoleBMI
                 double weight = 0.0;
                 double height = 0.0;
                 Console.Write("input your weight(kg) :");
-                weight = Convert.ToDouble(Console.ReadLine());
+                //weight = Convert.ToDouble(Console.ReadLine());
+                if (double.TryParse(Console.ReadLine(), out weight) == false)
+                {
+                    continue;
+                }
                 Console.Write("input your height(cm) :");
-                height = Convert.ToDouble(Console.ReadLine());
+                //height = Convert.ToDouble(Console.ReadLine());
+                if (!double.TryParse(Console.ReadLine(), out height))
+                {
+                    continue;
+                }
                 line("#", 40);
                 //process ประมวลผล
 
